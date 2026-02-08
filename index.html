@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a web app to users manage their daily task.">
+    <meta name="author" content="Esosa C. Obazee">
+    <title>To do</title>
+    <link rel="stylesheet" href="styles/todo.css">
+    <link rel="stylesheet" href="styles/largescreen.css">
+  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   
+    <header>
+         <div class="pagelogo">
+        <img loading="lazy" src="images/logo_app.webp" alt="Site Logo">
+         </div>
+        <div class="iconlogo hedlogo">
+             
+            
+            <a href="https://www.facebook.com/login.php/" target="_blank" ><img loading="lazy" src="images/fbook.webp" alt="Facebook logo"></a> 
+            <a href="https://www.instagram.com/accounts/login/" target="_blank"> <img loading="lazy" src="images/instagram02.webp" alt="Instagram"></a>  
+            <a href="https://web.whatsapp.com/" target="_blank"><img loading="lazy" src="images/whatsapp01.webp" alt="Whatsapp"></a>
+            
+        
+    
+        </div>
+
+     
+    </header>
+   
+
+
+    <main> 
+
+
+         <h1>Daily Task Manager </h1>
+        
+         <!-- To-Do List -->
+            <div id="task-list-container">
+                <h1 class="welcomeHead"></h1>
+                <h2>Today's Tasks</h2>
+                <ul id="task-list"></ul>
+                <input type="text" id="task-input" placeholder="Add a new task">
+                <button id="add-task-btn">➕</button>
+            </div>
+
+        
+            <div id="newsViewer" class="news-box">
+                <h2 id="newsTitle">NEWS API here</h2>
+                <img id="newsImage" />
+                <a id="newsLink" target="_blank">  </a>
+            </div>
+
+
+        
+            <div id="weather">
+                <img id="weather-icon" alt="Weather Icon" />
+                <p id="temp"></p>
+                <p id="weather-desc"></p>
+                <p id="weather-location"></p>
+            </div>
+
+            <!-- Joke Section -->
+            <div id="bom">
+                <p> book of mormon API here !!!</p>
+            </div>
+         
+             <!-- Motivational Quote Section -->
+            <div id="quote-of-the-day">
+                <h2>Quote of Day</h2>
+                <p id="quote">Loading...</p>
+            </div>
+        
+       
+        <button id="clearAll-task-btn">Reset Tasks</button>
+        
+  <button class="welcome">Change user</button>
+    </main>
+    
+
+    <footer>
+    <p>©️2025 <span id="getYear"></span> | Esosa C. Obazee | Nigeria </p>
+      <!--  <p> Last Modified <span id="lastModified"></span></p>-->  
+   </footer>
+</body>
+</html>

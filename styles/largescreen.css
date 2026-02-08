@@ -1,0 +1,49 @@
+@media screen and (min-width: 1200px) {
+    *{
+    box-sizing: border-box;
+  }
+    header,
+    nav,
+    main,
+    #menu,
+    footer{
+        max-width: 100%;
+    }
+    
+    
+    main{
+        width: 1000px;
+        margin:1rem auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:1.5rem;
+        padding:1rem;
+        border:1px solid rgba(0,0,10,0.1);
+    }
+    h1,
+    #clearAll-task-btn,
+    #joke-of-the-day{
+        grid-column: 1/3;
+    }
+    #weather{
+        background-color: white;
+    }
+   #weather img{
+    width: 200px
+
+   }
+   #temp{
+    position: absolute;
+    left:190px;
+}
+    
+}
+/* ----- SHOW HAMBURGER ONLY ON MOBILE ----- */
+@media (max-width: 768px) {
+    header::after {
+        display: block;
+    }
+    .iconlogo.hedlogo {
+        display: none;
+    }
+}

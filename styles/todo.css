@@ -1,0 +1,270 @@
+
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+h1,h2,p{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+
+header img{
+    width: 40px;
+}
+h1{
+    margin-bottom: 1rem;
+    padding:1rem;
+    background-color: green;
+    border-radius: .5rem;
+    color:white;
+   
+}
+#task-list-container h2{
+    margin:1rem auto;
+    border-bottom:  1px solid rgb(141, 140, 140);
+    width: 180px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+   
+}
+
+
+h1, h2 {
+    text-align: center;
+}
+
+#task-list-container {
+    margin-top: 1rem;
+    border: 2px rgba(206, 196, 163, 0.1);
+    /*background-color: #cec4a3;*/ /* work*/
+    background-color: rgba(206, 196, 163, 0.2);
+    border-radius: .5rem;
+}
+
+#task-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#task-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+#task-input{
+    width: 80%;
+    padding: 1rem;
+}
+
+button {
+    background-color: #06fa0e;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+#add-task-btn{
+    background-color: black;
+    padding:1rem;
+}
+#add-task-btn:hover{
+    background-color: rgb(68, 39, 3);
+  
+}
+#bom{
+    border: 2px solid blue;
+}
+#clearAll-task-btn{
+    background-color: black;
+    width: 200px;
+    color: red;
+    margin:0 auto;
+    display: block;
+    padding:1.2rem;
+}
+#clearAll-task-btn:hover{
+    background-color: rgb(37, 37, 37);
+}
+
+button:hover {
+    background-color: #12db26;
+}
+
+
+
+#weather{
+    border-radius: .5rem;
+    margin:1rem auto;
+    background-color: rgba(6, 250, 14, 0.4);
+    position: relative;
+    padding:.5rem;
+    
+}
+#weather img{
+    display: block;
+    width: 160px;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+#temp{
+    position: absolute;
+    top: 55px;
+    left: 275px;
+    font-weight: bold;
+}
+
+#weather p{
+    text-align: center;
+   
+}
+ #quote-of-the-day, 
+ #joke-of-the-day
+ {
+    margin-bottom: 20px;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    border-radius: .5rem;
+}
+
+
+.completed {
+    text-decoration: line-through;
+    color: rgb(54, 51, 51);
+    background-color: rgb(83, 122, 83);
+}
+
+.incomplete {
+    color: black;  
+
+
+    
+}
+footer{
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    border-top: 2px dashed rgb(187, 179, 179);
+}
+footer p{
+    margin: .5rem;
+}
+li span {
+    display: inline-block;
+    width: 250px;    /* set your preferred width */
+    white-space: nowrap; /* keep text on one line */
+    overflow: hidden;    /* hide overflow */
+    text-overflow: ellipsis; /* add "..." */
+}
+
+
+/* NEWS DIV */
+
+#newsViewer {
+    opacity: 1;
+    transition: opacity 0.6s ease;   /* fade duration */
+    margin-top: 1rem;
+    background-color: rgba(114, 157, 158, 0.4);
+    position: relative;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+#newsViewer h2 {
+    padding: 1rem;
+    
+    border-bottom: 1px solid rgb(83, 122, 83);
+    border-radius: 1rem;
+}
+
+#newsViewer.fade-out {
+    opacity: 0;
+}
+
+#newsImage{
+    width: 100%;
+    height:auto;
+    padding:.5rem;
+    position:relative;
+}
+#newsLink{
+    text-decoration:none;
+    position:absolute;
+    bottom: 45px;
+    left: 30px;
+    background-color: antiquewhite;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-bottom:1px solid greenyellow;
+}
+#newsLink:hover{
+  background-color: rgba(250, 235, 215, 0.5);
+  text-decoration: underline;
+  
+}
+#task-input{
+    margin: 1rem;
+}
+
+
+
+.delete-btn {
+    background-color: black; /* change to any color */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: rgb(75, 3, 3);
+}
+
+
+
+/* menu */
+/* ----- HAMBURGER ICON ----- */
+header {
+    position: relative;
+}
+
+header::after {
+    content: "☰";
+    font-size: 2rem;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none; /* hidden on desktop */
+}
+
+/* ----- MOBILE MENU PANEL ----- */
+header::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: -240px; /* hidden by default */
+    width: 220px;
+    height: 100vh;
+    background: #222;
+    transition: right 0.3s ease;
+    z-index: 900;
+}
+
+/* ----- SHOW MENU WHEN ACTIVE ----- */
+header.menu-open::before {
+    right: 0;
+}
+
+header.menu-open::after {
+    content: "✕"; /* change icon when open */
+}
+
+
