@@ -8,7 +8,9 @@
     <title>To do</title>
     <link rel="stylesheet" href="styles/todo.css">
     <link rel="stylesheet" href="styles/largescreen.css">
-  
+    <link rel="stylesheet" href="styles/mormon.css">
+    <script src="scripts/todo.js" defer></script>
+    <script src="scripts/mormon.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,21 +23,21 @@
 <body>
    
     <header>
-         <div class="pagelogo">
-        <img loading="lazy" src="images/logo_app.webp" alt="Site Logo">
-         </div>
-        <div class="iconlogo hedlogo">
+         <div class="user">
              
-            
-            <a href="https://www.facebook.com/login.php/" target="_blank" ><img loading="lazy" src="images/fbook.webp" alt="Facebook logo"></a> 
-            <a href="https://www.instagram.com/accounts/login/" target="_blank"> <img loading="lazy" src="images/instagram02.webp" alt="Instagram"></a>  
-            <a href="https://web.whatsapp.com/" target="_blank"><img loading="lazy" src="images/whatsapp01.webp" alt="Whatsapp"></a>
-            
-        
-    
-        </div>
+                 <button class="welcome">  <img loading="lazy" src="images/OIP (1).webp" alt="Site Logo">   Change User </button> 
+         </div>
+       
+
+         <div id="weather">
+                <img id="weather-icon" alt="Weather Icon" />
+                <p id="temp"></p>
+                <p id="weather-desc"></p>
+                <p id="weather-location"></p>
+            </div>
 
      
+         <h1>Daily Task Manager </h1>
     </header>
    
 
@@ -43,37 +45,39 @@
     <main> 
 
 
-         <h1>Daily Task Manager </h1>
         
          <!-- To-Do List -->
             <div id="task-list-container">
-                <h1 class="welcomeHead"></h1>
+                <h2 class="welcomeHead"></h2>
                 <h2>Today's Tasks</h2>
                 <ul id="task-list"></ul>
                 <input type="text" id="task-input" placeholder="Add a new task">
                 <button id="add-task-btn">➕</button>
             </div>
 
+            <!-- book of mormon -->
+             
+             <div id="bom">
+                <h2> Daily BOM Verse</h2>
+                 <!--  <div id="app"></div> -->
+                  
+                    <input type="text" id="searchInput" placeholder="Search for a keyword...">
+                    <button id="searchBtn">Search</button>
+                     <div id="verse"></div>
+                 <div id="searchResults"></div>
+             </div>
         
-            <div id="newsViewer" class="news-box">
-                <h2 id="newsTitle">NEWS API here</h2>
+            
+            
+              
+
+             <div id="newsViewer" class="news-box">
+                <!-- News <h2 id="newsTitle">NEWS API here</h2> -->
+                
                 <img id="newsImage" />
                 <a id="newsLink" target="_blank">  </a>
             </div>
 
-
-        
-            <div id="weather">
-                <img id="weather-icon" alt="Weather Icon" />
-                <p id="temp"></p>
-                <p id="weather-desc"></p>
-                <p id="weather-location"></p>
-            </div>
-
-            <!-- Joke Section -->
-            <div id="bom">
-                <p> book of mormon API here !!!</p>
-            </div>
          
              <!-- Motivational Quote Section -->
             <div id="quote-of-the-day">
@@ -84,7 +88,7 @@
        
         <button id="clearAll-task-btn">Reset Tasks</button>
         
-  <button class="welcome">Change user</button>
+   
     </main>
     
 

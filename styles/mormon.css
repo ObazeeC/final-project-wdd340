@@ -1,0 +1,33 @@
+#bom{
+    padding:.4rem;
+    background-color: rgb(5, 5, 100);
+    color:white
+}
+details {
+  margin-bottom: 10px;
+}
+#verse{
+    margin:1rem;
+    
+    
+}
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+#searchInput{
+    width: 80%;
+    padding: 1rem;
+}
+#result{
+ margin: 1rem;
+ text-align: center;
+ border-bottom: 1px solid black;
+}
+.verRef{
+    margin:1rem;
+}
+.otherRef, h3{
+ list-style-type: none;
+ padding-left: 1rem;
+    }

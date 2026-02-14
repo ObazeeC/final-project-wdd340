@@ -25,25 +25,10 @@
     #joke-of-the-day{
         grid-column: 1/3;
     }
-    #weather{
-        background-color: white;
-    }
-   #weather img{
-    width: 200px
-
-   }
-   #temp{
-    position: absolute;
-    left:190px;
-}
+     
+    header{
+    
+    width: 900px;
     
 }
-/* ----- SHOW HAMBURGER ONLY ON MOBILE ----- */
-@media (max-width: 768px) {
-    header::after {
-        display: block;
-    }
-    .iconlogo.hedlogo {
-        display: none;
-    }
 }
