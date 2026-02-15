@@ -31,4 +31,9 @@
     width: 900px;
     
 }
+#bom,#quote-of-the-day,#newsViewer,#task-list-container{
+    margin:1rem 2px .5rem 2px;
+}
+
+
 }

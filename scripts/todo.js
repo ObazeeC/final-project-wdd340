@@ -234,7 +234,7 @@ function nextNewsArticle() {
     displayNewsArticle();
 }
 
- loadNews();
+// loadNews();
 
 //quote
 

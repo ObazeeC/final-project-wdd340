@@ -81,7 +81,7 @@ function searchVerses(query) {
   // --- TOP 3 RESULTS WITH TEXT ---
   const topThree = lastSearchResults.slice(0, 3);
 
-  container.innerHTML += `<h3 id="result">Top 3 Results</h3>`;
+  container.innerHTML += `<h3 id="result">Three Verses </h3>`;
   topThree.forEach(v => {
     container.innerHTML += `
       <p class="verRef">
