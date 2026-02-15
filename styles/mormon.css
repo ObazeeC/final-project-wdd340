@@ -7,9 +7,11 @@ details {
   margin-bottom: 10px;
 }
 #verse{
-    margin:1rem;
-    
-    
+    margin:1rem;  
+}
+
+#bom h2{
+    margin: .6rem;
 }
 summary {
   font-weight: bold;
