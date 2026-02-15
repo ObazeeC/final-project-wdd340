@@ -13,6 +13,10 @@ details {
 #bom h2{
     margin: .6rem;
 }
+
+#bom,#quote-of-the-day,#newsViewer,#task-list-container{
+    margin:2.5rem 2px .5rem 2px;
+}
 summary {
   font-weight: bold;
   cursor: pointer;
