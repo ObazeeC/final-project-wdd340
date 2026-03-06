@@ -239,7 +239,7 @@ function nextNewsArticle() {
 //quote
 
 async function getQuote() {
-  const response = await fetch("http://api.quotable.io/random");
+  const response = await fetch("https://api.quotable.io/random");
   if (response.ok) {
     const data = await response.json();
    // console.log(data)
